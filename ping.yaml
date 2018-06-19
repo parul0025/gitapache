@@ -1,0 +1,15 @@
+---
+
+- hosts: webserver
+  become: true
+  tasks:
+   - name: first task
+     ping:
+
+   - name: creating user
+     user: name=playuid uid=1220
+
+
+
+
+
